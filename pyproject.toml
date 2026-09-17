@@ -1,12 +1,15 @@
 [project]
 name = "my_project"
 version = "0.1.0"
-dependencies = [
-]
+dependencies = []
 
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0.0",
+]
+
+server = [
+    "fastapi[standard]>=0.100.0",
 ]
 
 [tool.mypy]
